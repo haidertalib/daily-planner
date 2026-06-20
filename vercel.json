@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "crons": [
+    {
+      "path": "/api/daily-reminder",
+      "schedule": "0 6 * * 0,1,2,3,4"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/sw.js",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache" },
+        { "key": "Service-Worker-Allowed", "value": "/" }
+      ]
+    }
+  ]
+}
